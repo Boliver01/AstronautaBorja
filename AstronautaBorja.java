@@ -7,10 +7,10 @@ public class SegundaLeyNewton2 {
         Scanner tecladon = new Scanner(System.in);
         int m;
         char continuar = 'y';
-        final double GMARTE = 3.72, GTIERRA = 9.8, GJUPITER = 24.79, GSATURNO = 10.44, GVENUS = 8.87;
+        final double GMARTE = 3.72, GTIERRA = 9.8, GJUPITER = 24.79, GSATURNO = 10.44, GVENUS = 8.87 GMERCURIO =3.7;
 
         do {
-            System.out.println("¿En que planeta deseas calcular el peso: 1=MARTE, 2=TIERRA, 3=JUPITER, 4=SATURNO o 5=VENUS?");
+            System.out.println("¿En que planeta deseas calcular el peso: 1=MARTE, 2=TIERRA, 3=JUPITER, 4=SATURNO, 5=VENUS o 6=MERCURIO?");
             int planeta;
             planeta = tecladoPlaneta.nextInt();
                     
@@ -44,6 +44,13 @@ public class SegundaLeyNewton2 {
                     System.out.println("Introduce la masa del astronauta en kg.");
                     m = tecladoMasa.nextInt();
                     System.out.println("El peso del Astronauta en Venus es: " + m * GVENUS + " N");
+                    break;
+                 
+                case 6:
+
+                    System.out.println("Introduce la masa del astronauta en kg.");
+                    m = tecladoMasa.nextInt();
+                    System.out.println("El peso del Astronauta en Mercurio es: " + m * GMERCURIO + " N");
                     break;
 
                 default:
